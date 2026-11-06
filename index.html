@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="inventory-form" novalidate>
+        <fieldset>
+            <div>
+                <label for="item-name">Producto:</label>
+                <input type="text" name="item-name" placeholder="ej: airfryer_5000" autofocus>
+            </div>
+            <button type="submit">Agregar Producto</button>
+        </fieldset>
+        <div class="error-display">
+            <p id="error-log"></p>
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="product-column">Producto</th>
+                <th>Cantidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="inventory-table"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

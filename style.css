@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(200, 200, 200);
+}
+
+.product-column {
+    width: 75%;
+}
+
+.error-display {
+    background-color: red;
+    color: white;
+}
